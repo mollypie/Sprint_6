@@ -1,7 +1,6 @@
 import random
 
 from locators.order_page_locators import OrderPagesLocators
-from pages.base_page import BasePage
 
 
 def generate_phone_number():

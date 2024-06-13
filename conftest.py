@@ -1,7 +1,6 @@
 import pytest
 
 from selenium import webdriver
-from pages import *
 
 
 @pytest.fixture

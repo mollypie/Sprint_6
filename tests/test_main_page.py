@@ -1,3 +1,4 @@
+import allure
 import pytest
 
 from conftest import driver
@@ -7,7 +8,7 @@ from pages.main_page import MainPage
 
 
 class TestMainPage:
-
+    @allure.title('Проверка ответов на вопросы в разделе FAQ')
     @pytest.mark.parametrize(
         'num, result',
         [
