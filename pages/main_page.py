@@ -25,3 +25,7 @@ class MainPage(BasePage):
     def get_answer_text(self, num):
         self.click_to_question(num)
         return self.get_text_answer(num)
+
+    @allure.step('Получение текста заголовка главной страницы')
+    def get_main_header(self):
+        return self.get_text_from_element(MainPagesLocators.MAIN_HEADER)
